@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | VEGA IT NETWORKS</title>
+
+    <meta
+        name="description"
+        content="Explore VEGA IT NETWORKS services including Discover, Designing, Supply, Implementation, Maintenance and Upgradation for enterprise IT infrastructure."
+    >
+
+    <meta
+        name="keywords"
+        content="VEGA IT NETWORKS services, IT infrastructure services, network implementation, IT maintenance, IT upgradation, technology supply, infrastructure design"
+    >
+
+    <meta
+        name="author"
+        content="VEGA IT NETWORKS"
+    >
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================== */
+
+        .topbar {
+            background: #08111f;
+            color: #ffffff;
+            font-size: 13px;
+            padding: 9px 0;
+        }
+
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        .topbar-right {
+            display: flex;
+            gap: 25px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e7eaf0;
+            backdrop-filter: blur(10px);
+        }
+
+
+        .navbar {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            color: #0a4da2;
+            white-space: nowrap;
+        }
+
+
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: linear-gradient(
+                135deg,
+                #0a4da2,
+                #00a6ff
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            list-style: none;
+        }
+
+
+        .nav-menu > li {
+            position: relative;
+        }
+
+
+        .nav-menu > li > a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #172033;
+            padding: 30px 0;
+            display: block;
+            transition: 0.3s;
+        }
+
+
+        .nav-menu > li > a:hover {
+            color: #0a67d1;
+        }
+
+
+        .active-link {
+            color: #0a67d1 !important;
+        }
+
+
+        .quote-btn {
+            background: #0a67d1 !important;
+            color: #ffffff !important;
+            padding: 12px 19px !important;
+            border-radius: 8px;
+        }
+
+
+        .quote-btn:hover {
+            background: #084f9f !important;
+        }
+
+
+        /* =========================
+           SOLUTIONS DROPDOWN
+        ========================== */
+
+        .solutions-menu:hover .solutions-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0);
+        }
+
+
+        .solutions-dropdown {
+            position: absolute;
+            top: 76px;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            width: 300px;
+            background: #ffffff;
+            border: 1px solid #e5e8ee;
+            border-radius: 12px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+            padding: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.25s ease;
+        }
+
+
+        .solutions-dropdown a {
+            display: block;
+            padding: 11px 13px;
+            border-radius: 7px;
+            font-size: 14px;
+            color: #273247;
+            transition: 0.25s;
+        }
+
+
+        .solutions-dropdown a:hover {
+            background: #eef6ff;
+            color: #0a67d1;
+            padding-left: 18px;
+        }
+
+
+        /* =========================
+           MOBILE MENU
+        ========================== */
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #172033;
+        }
+
+
+        /* =========================
+           PAGE HERO
+        ========================== */
+
+        .page-hero {
+            min-height: 430px;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    rgba(5,17,35,0.97),
+                    rgba(7,45,86,0.88)
+                ),
+                url("technology.jpg")
+                center/cover no-repeat;
+
+            color: #ffffff;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .page-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            border: 1px solid rgba(255,255,255,0.1);
+
+            border-radius: 50%;
+
+            right: -150px;
+            top: -40px;
+        }
+
+
+        .page-hero-content {
+            max-width: 800px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .eyebrow {
+            display: inline-block;
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            color: #36b5ff;
+
+            margin-bottom: 18px;
+        }
+
+
+        .page-hero h1 {
+            font-size: clamp(42px, 6vw, 65px);
+
+            line-height: 1.08;
+
+            margin-bottom: 20px;
+
+            letter-spacing: -1.5px;
+        }
+
+
+        .page-hero h1 span {
+            color: #39b6ff;
+        }
+
+
+        .page-hero p {
+            max-width: 700px;
+
+            font-size: 17px;
+
+            color: #d7e2ef;
+        }
+
+
+        /* =========================
+           SERVICES INTRO
+        ========================== */
+
+        .section {
+            padding: 100px 0;
+        }
+
+
+        .section-heading {
+            text-align: center;
+
+            max-width: 760px;
+
+            margin: 0 auto 60px;
+        }
+
+
+        .section-heading h2 {
+            font-size: 42px;
+
+            line-height: 1.15;
+
+            margin-bottom: 15px;
+
+            color: #101828;
+        }
+
+
+        .section-heading p {
+            color: #667085;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           SERVICES GRID
+        ========================== */
+
+        .services-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .service-card {
+            position: relative;
+
+            background: #ffffff;
+
+            border: 1px solid #e4e8ef;
+
+            border-radius: 16px;
+
+            padding: 34px;
+
+            min-height: 330px;
+
+            transition: all 0.3s ease;
+
+            overflow: hidden;
+        }
+
+
+        .service-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 4px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #0a4da2,
+                    #00a6ff
+                );
+
+            transform: scaleX(0);
+
+            transform-origin: left;
+
+            transition: 0.3s;
+        }
+
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+
+        .service-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 18px 45px
+                rgba(20,35,60,0.10);
+
+            border-color: #d6e8ff;
+        }
+
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+
+            border-radius: 14px;
+
+            background: #eaf4ff;
+
+            color: #0a67d1;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 22px;
+        }
+
+
+        .service-card h3 {
+            font-size: 22px;
+
+            margin-bottom: 13px;
+
+            color: #101828;
+        }
+
+
+        .service-card p {
+            font-size: 14px;
+
+            color: #667085;
+
+            line-height: 1.75;
+        }
+
+
+        /* =========================
+           PROCESS STRIP
+        ========================== */
+
+        .process-section {
+            background: #f7f9fc;
+        }
+
+
+        .process-flow {
+            display: grid;
+
+            grid-template-columns:
+                repeat(6, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .process-step {
+            position: relative;
+
+            text-align: center;
+
+            padding: 25px 12px;
+        }
+
+
+        .process-step:not(:last-child)::after {
+            content: "→";
+
+            position: absolute;
+
+            right: -10px;
+
+            top: 42px;
+
+            color: #0a67d1;
+
+            font-size: 20px;
+
+            font-weight: 800;
+        }
+
+
+        .process-circle {
+            width: 62px;
+            height: 62px;
+
+            margin: 0 auto 15px;
+
+            border-radius: 50%;
+
+            background: #ffffff;
+
+            border: 2px solid #dce9f7;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: #0a67d1;
+
+            font-weight: 800;
+        }
+
+
+        .process-step h3 {
+            font-size: 15px;
+
+            margin-bottom: 6px;
+        }
+
+
+        .process-step p {
+            color: #667085;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            padding: 70px 0;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    #0756ad,
+                    #0798ed
+                );
+
+            color: #ffffff;
+        }
+
+
+        .cta-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+
+        .cta h2 {
+            font-size: 38px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .cta p {
+            color: #dcefff;
+        }
+
+
+        .cta .btn {
+            background: #ffffff;
+
+            color: #0756ad;
+
+            white-space: nowrap;
+        }
+
+
+        .btn {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 14px 24px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #06101e;
+
+            color: #ffffff;
+
+            padding: 65px 0 25px;
+        }
+
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr 1fr;
+
+            gap: 45px;
+        }
+
+
+        .footer-brand p {
+            color: #9eacbd;
+
+            font-size: 14px;
+
+            margin-top: 18px;
+
+            max-width: 330px;
+        }
+
+
+        .footer-column h4 {
+            margin-bottom: 18px;
+
+            font-size: 15px;
+        }
+
+
+        .footer-column a {
+            display: block;
+
+            color: #9eacbd;
+
+            font-size: 13px;
+
+            margin-bottom: 10px;
+
+            transition: 0.2s;
+        }
+
+
+        .footer-column a:hover {
+            color: #ffffff;
+        }
+
+
+        .footer-bottom {
+            border-top:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            color: #8190a2;
+
+            font-size: 12px;
+
+            gap: 20px;
+        }
+
+
+        /* =========================
+           WHATSAPP
+        ========================== */
+
+        .whatsapp {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            width: 56px;
+            height: 56px;
+
+            border-radius: 50%;
+
+            background: #25D366;
+
+            color: #ffffff;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+
+            font-weight: 800;
+
+            z-index: 999;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.2);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 1100px) {
+
+            .nav-menu {
+                gap: 16px;
+            }
+
+
+            .nav-menu > li > a {
+                font-size: 13px;
+            }
+
+
+            .services-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .process-flow {
+                grid-template-columns:
+                    repeat(3, 1fr);
+
+                row-gap: 25px;
+            }
+
+
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 992px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+
+            .nav-menu {
+                position: absolute;
+
+                top: 78px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: #ffffff;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                padding: 15px 5%;
+
+                border-top:
+                    1px solid #e5e9ef;
+
+                box-shadow:
+                    0 15px 30px
+                    rgba(0,0,0,0.08);
+            }
+
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+
+            .nav-menu > li > a {
+                padding: 12px 0;
+            }
+
+
+            .solutions-dropdown {
+                position: static;
+
+                width: 100%;
+
+                transform: none;
+
+                opacity: 1;
+
+                visibility: visible;
+
+                display: none;
+
+                box-shadow: none;
+
+                border: none;
+
+                padding:
+                    0 0 5px 15px;
+            }
+
+
+            .solutions-menu.open
+            .solutions-dropdown {
+                display: block;
+            }
+
+
+            .solutions-menu:hover
+            .solutions-dropdown {
+                opacity: 1;
+
+                visibility: visible;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .topbar {
+                display: none;
+            }
+
+
+            .page-hero {
+                min-height: 390px;
+            }
+
+
+            .page-hero h1 {
+                font-size: 45px;
+            }
+
+
+            .page-hero p {
+                font-size: 15px;
+            }
+
+
+            .section {
+                padding: 75px 0;
+            }
+
+
+            .section-heading h2 {
+                font-size: 34px;
+            }
+
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .process-flow {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .cta-inner {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 92%;
+            }
+
+
+            .logo {
+                font-size: 17px;
+            }
+
+
+            .logo-mark {
+                width: 34px;
+                height: 34px;
+            }
+
+
+            .page-hero h1 {
+                font-size: 39px;
+            }
+
+
+            .process-flow {
+                grid-template-columns: 1fr;
+            }
+
+
+            .service-card {
+                min-height: auto;
+
+                padding: 28px;
+            }
+
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <div class="topbar">
+
+        <div class="container topbar-inner">
+
+            <div>
+                Enterprise Technology & Infrastructure Solutions
+            </div>
+
+
+            <div class="topbar-right">
+
+                <span>
+                    📞 +91 95506 59565
+                </span>
+
+                <span>
+                    ✉ sales@aindusglobal.com
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    VI
+                </span>
+
+                VEGA IT NETWORKS
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu"
+            >
+                ☰
+            </button>
+
+
+            <ul class="nav-menu" id="navMenu">
+
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#about">
+                        About Us
+                    </a>
+                </li>
+
+
+                <li>
+                    <a
+                        href="services.html"
+                        class="active-link"
+                    >
+                        Services
+                    </a>
+                </li>
+
+
+                <li
+                    class="solutions-menu"
+                    id="solutionsMenu"
+                >
+
+                    <a href="index.html#solutions">
+                        Solutions ▾
+                    </a>
+
+
+                    <div class="solutions-dropdown">
+
+                        <a href="index.html#network-infrastructure">
+                            Network Infrastructure
+                        </a>
+
+                        <a href="index.html#voice-video">
+                            Voice and Video Communication
+                        </a>
+
+                        <a href="index.html#surveillance">
+                            Surveillance System
+                        </a>
+
+                        <a href="index.html#access-control">
+                            Access Control System
+                        </a>
+
+                        <a href="index.html#fire-alarm">
+                            Fire Alarm System
+                        </a>
+
+                        <a href="index.html#it-hardware">
+                            IT Hardware & Software Solutions
+                        </a>
+
+                        <a href="index.html#cyber-security">
+                            Cyber Security
+                        </a>
+
+                        <a href="index.html#cloud-solutions">
+                            Cloud Solutions
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="index.html#partners">
+                        Partners
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#clients">
+                        Clients
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#contact">
+                        Contact Us
+                    </a>
+                </li>
+
+
+                <li>
+                    <a
+                        href="index.html#contact"
+                        class="quote-btn"
+                    >
+                        Get a Quote
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="page-hero-content">
+
+                <span class="eyebrow">
+                    OUR SERVICES
+                </span>
+
+
+                <h1>
+                    From <span>Vision</span> to
+                    Technology Execution.
+                </h1>
+
+
+                <p>
+                    VEGA IT NETWORKS provides end-to-end technology
+                    services covering discovery, solution design,
+                    supply, implementation, maintenance and
+                    infrastructure upgradation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    END-TO-END SERVICES
+                </span>
+
+
+                <h2>
+                    Technology Services Built Around Your Business
+                </h2>
+
+
+                <p>
+                    Our complete service lifecycle helps organizations
+                    plan, deploy, operate and continuously improve their
+                    technology infrastructure.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- DISCOVER -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Discover
+                    </h3>
+
+
+                    <p>
+                        We begin by understanding your business,
+                        existing infrastructure, operational challenges
+                        and technology requirements. Our discovery process
+                        helps identify gaps, opportunities and the right
+                        technology roadmap for your organization.
+                    </p>
+
+                </div>
+
+
+                <!-- DESIGNING -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Designing
+                    </h3>
+
+
+                    <p>
+                        Our team develops a practical and scalable
+                        technology architecture based on your business
+                        objectives. We design network, security,
+                        communication, cloud and IT infrastructure
+                        solutions with performance, reliability and
+                        future expansion in mind.
+                    </p>
+
+                </div>
+
+
+                <!-- SUPPLY -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        03
+                    </div>
+
+
+                    <h3>
+                        Supply
+                    </h3>
+
+
+                    <p>
+                        We supply genuine and reliable IT hardware,
+                        software, networking equipment, security systems,
+                        communication products and infrastructure
+                        components from trusted technology brands.
+                    </p>
+
+                </div>
+
+
+                <!-- IMPLEMENTATION -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        04
+                    </div>
+
+
+                    <h3>
+                        Implementation
+                    </h3>
+
+
+                    <p>
+                        Our technical team manages professional
+                        installation, configuration, integration and
+                        commissioning. We focus on quality execution,
+                        proper testing and smooth deployment with
+                        minimal disruption to your business.
+                    </p>
+
+                </div>
+
+
+                <!-- MAINTENANCE -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        05
+                    </div>
+
+
+                    <h3>
+                        Maintenance
+                    </h3>
+
+
+                    <p>
+                        We provide ongoing maintenance and technical
+                        support to keep your infrastructure secure,
+                        available and performing efficiently. Regular
+                        monitoring and preventive maintenance help
+                        reduce downtime and operational risks.
+                    </p>
+
+                </div>
+
+
+                <!-- UPGRADATION -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        06
+                    </div>
+
+
+                    <h3>
+                        Upgradation
+                    </h3>
+
+
+                    <p>
+                        As your business grows, we help modernize and
+                        upgrade your technology infrastructure. From
+                        hardware refreshes and network improvements to
+                        security enhancements, cloud adoption and system
+                        expansion, we keep your infrastructure future-ready.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICE FLOW
+    ========================== -->
+
+    <section class="section process-section">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    OUR SERVICE LIFECYCLE
+                </span>
+
+
+                <h2>
+                    One Technology Journey. Complete Support.
+                </h2>
+
+
+                <p>
+                    We support your technology infrastructure throughout
+                    its complete lifecycle.
+                </p>
+
+            </div>
+
+
+            <div class="process-flow">
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        01
+                    </div>
+
+                    <h3>
+                        Discover
+                    </h3>
+
+                    <p>
+                        Understand
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        02
+                    </div>
+
+                    <h3>
+                        Designing
+                    </h3>
+
+                    <p>
+                        Plan
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        03
+                    </div>
+
+                    <h3>
+                        Supply
+                    </h3>
+
+                    <p>
+                        Source
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        04
+                    </div>
+
+                    <h3>
+                        Implementation
+                    </h3>
+
+                    <p>
+                        Deploy
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        05
+                    </div>
+
+                    <h3>
+                        Maintenance
+                    </h3>
+
+                    <p>
+                        Support
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        06
+                    </div>
+
+                    <h3>
+                        Upgradation
+                    </h3>
+
+                    <p>
+                        Improve
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="cta-inner">
+
+
+                <div>
+
+                    <h2>
+                        Need help with your IT infrastructure?
+                    </h2>
+
+
+                    <p>
+                        Talk to VEGA IT NETWORKS about your
+                        technology requirements.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="index.html#contact"
+                    class="btn"
+                >
+                    Get a Quote
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+
+                        <span class="logo-mark">
+                            VI
+                        </span>
+
+                        VEGA IT NETWORKS
+
+                    </a>
+
+
+                    <p>
+                        Enterprise technology and infrastructure
+                        solutions for secure, connected and
+                        future-ready businesses.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Company
+                    </h4>
+
+
+                    <a href="index.html#about">
+                        About Us
+                    </a>
+
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+
+                    <a href="index.html#partners">
+                        Partners
+                    </a>
+
+
+                    <a href="index.html#clients">
+                        Clients
+                    </a>
+
+
+                    <a href="index.html#contact">
+                        Contact Us
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Solutions
+                    </h4>
+
+
+                    <a href="index.html#network-infrastructure">
+                        Network Infrastructure
+                    </a>
+
+
+                    <a href="index.html#voice-video">
+                        Voice & Video Communication
+                    </a>
+
+
+                    <a href="index.html#surveillance">
+                        Surveillance System
+                    </a>
+
+
+                    <a href="index.html#access-control">
+                        Access Control System
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        More Solutions
+                    </h4>
+
+
+                    <a href="index.html#fire-alarm">
+                        Fire Alarm System
+                    </a>
+
+
+                    <a href="index.html#it-hardware">
+                        IT Hardware & Software
+                    </a>
+
+
+                    <a href="index.html#cyber-security">
+                        Cyber Security
+                    </a>
+
+
+                    <a href="index.html#cloud-solutions">
+                        Cloud Solutions
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <div>
+                    © 2026 VEGA IT NETWORKS.
+                    All Rights Reserved.
+                </div>
+
+
+                <div>
+                    Enterprise Technology & Infrastructure Solutions
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         WHATSAPP
+    ========================== -->
+
+    <a
+        href="https://wa.me/919550659565"
+        class="whatsapp"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+    >
+        ☎
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+
+        const navMenu =
+            document.getElementById("navMenu");
+
+
+        const solutionsMenu =
+            document.getElementById("solutionsMenu");
+
+
+        /* Mobile Menu */
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                navMenu.classList.toggle("active");
+
+            }
+        );
+
+
+        /* Mobile Solutions Dropdown */
+
+        solutionsMenu
+            .querySelector(":scope > a")
+            .addEventListener(
+                "click",
+                function (event) {
+
+                    if (window.innerWidth <= 992) {
+
+                        event.preventDefault();
+
+                        solutionsMenu.classList.toggle("open");
+
+                    }
+
+                }
+            );
+
+
+        /* Close Menu */
+
+        document
+            .querySelectorAll(".nav-menu a")
+            .forEach(function(link) {
+
+                link.addEventListener(
+                    "click",
+                    function() {
+
+                        if (
+                            window.innerWidth <= 992 &&
+                            !link.parentElement
+                                .classList
+                                .contains(
+                                    "solutions-menu"
+                                )
+                        ) {
+
+                            navMenu
+                                .classList
+                                .remove(
+                                    "active"
+                                );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+    </script>
+
+
+</body>
+</html>
