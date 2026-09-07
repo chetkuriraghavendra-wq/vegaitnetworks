@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud Solutions | VEGA IT NETWORKS</title>
+
+    <meta name="description"
+          content="VEGA IT NETWORKS provides professional cloud solutions including cloud infrastructure, cloud migration, backup and disaster recovery, cloud networking, cloud security, virtualization and managed cloud services.">
+
+    <meta name="keywords"
+          content="cloud solutions, cloud infrastructure, cloud migration, cloud services, cloud security, cloud backup, disaster recovery, cloud networking, virtualization, managed cloud services, VEGA IT NETWORKS">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e9edf3;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            color: #0a4da2;
+            white-space: nowrap;
+        }
+
+
+        .logo-mark {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            list-style: none;
+        }
+
+        .nav-links > li {
+            position: relative;
+        }
+
+        .nav-links > li > a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #30394a;
+            transition: .3s;
+        }
+
+        .nav-links > li > a:hover,
+        .nav-links > li > a.active {
+            color: #0d6efd;
+        }
+
+        /* EXACT THIN / LIGHT SOLUTIONS DROPDOWN */
+        .dropdown-menu {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            width: 300px;
+            min-width: 300px;
+            transform: translate(-50%, 10px);
+            background: #ffffff;
+            border: 1px solid #e5e8ee;
+            border-radius: 12px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+            padding: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.25s ease;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0);
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 11px 13px;
+            border-radius: 7px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400 !important;
+            color: #273247;
+            line-height: 1.6;
+            background: transparent;
+            transition: 0.25s;
+        }
+
+        .dropdown-menu li a:hover {
+            background: #eef6ff;
+            color: #0a67d1;
+            padding-left: 18px;
+            font-weight: 400 !important;
+        }
+
+        .dropdown-menu li a.active {
+            background: #eef6ff;
+            color: #0a67d1;
+            font-weight: 400 !important;
+        }
+
+        .quote-btn {
+            background: #0d6efd !important;
+            color: #ffffff !important;
+            padding: 12px 19px;
+            border-radius: 7px;
+        }
+
+        .quote-btn:hover {
+            background: #0958d9 !important;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8, 24, 48, .96),
+                    rgba(8, 35, 70, .88),
+                    rgba(9, 54, 103, .72)
+                ),
+                url("assets/images/technology.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: #ffffff;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            margin-bottom: 22px;
+            color: #c8dcf7;
+        }
+
+        .breadcrumb a {
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1.08;
+            margin-bottom: 22px;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: #5fa5ff;
+        }
+
+        .hero p {
+            max-width: 760px;
+            color: #e0ebf9;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #0d6efd;
+            color: #ffffff;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,.6);
+            color: #ffffff;
+            padding: 12px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* =========================
+           COMMON
+        ========================== */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            max-width: 820px;
+            margin-bottom: 45px;
+        }
+
+        .section-label {
+            color: #0d6efd;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(30px, 4vw, 45px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #111b2e;
+        }
+
+        .section-heading p {
+            color: #667085;
+            font-size: 16px;
+        }
+
+        /* =========================
+           OVERVIEW
+        ========================== */
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-text p {
+            color: #5f6b7a;
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        .overview-list {
+            margin-top: 25px;
+            list-style: none;
+            display: grid;
+            gap: 13px;
+        }
+
+        .overview-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        .check {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background: #eaf3ff;
+            color: #0d6efd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+        }
+
+        .access-box {
+            min-height: 390px;
+            border-radius: 18px;
+            padding: 35px;
+            background: linear-gradient(145deg, #071d3a, #0c4f91);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .access-box::after {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border: 1px solid rgba(255,255,255,.16);
+            border-radius: 50%;
+            right: -80px;
+            bottom: -100px;
+        }
+
+        .access-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 14px;
+            background: rgba(255,255,255,.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 29px;
+            margin-bottom: 25px;
+        }
+
+        .access-box h3 {
+            font-size: 28px;
+            margin-bottom: 13px;
+        }
+
+        .access-box p {
+            color: #d9e8fa;
+        }
+
+        /* =========================
+           SOLUTIONS
+        ========================== */
+
+        .solutions {
+            background: #f7f9fc;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .solution-card {
+            background: #ffffff;
+            border: 1px solid #e7ebf0;
+            border-radius: 13px;
+            padding: 30px;
+            transition: .3s;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 45px rgba(24, 54, 90, .10);
+            border-color: #cbdff8;
+        }
+
+        .solution-number {
+            color: #0d6efd;
+            font-weight: 800;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .solution-card h3 {
+            font-size: 21px;
+            margin-bottom: 11px;
+            color: #172033;
+        }
+
+        .solution-card p {
+            color: #687587;
+            font-size: 14px;
+        }
+
+        /* =========================
+           CAPABILITIES
+        ========================== */
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .capability {
+            padding: 29px;
+            border: 1px solid #e4e9f0;
+            border-radius: 13px;
+            background: #ffffff;
+        }
+
+        .capability h3 {
+            margin-bottom: 9px;
+            font-size: 20px;
+        }
+
+        .capability p {
+            color: #697586;
+            font-size: 14px;
+        }
+
+        .capability-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: #edf5ff;
+            color: #0d6efd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           PROCESS
+        ========================== */
+
+        .process {
+            background: #071a32;
+            color: #ffffff;
+        }
+
+        .process .section-heading h2 {
+            color: #ffffff;
+        }
+
+        .process .section-heading p {
+            color: #b9c9dc;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .process-card {
+            padding: 27px 20px;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 12px;
+            background: rgba(255,255,255,.045);
+        }
+
+        .process-card span {
+            color: #5fa5ff;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .process-card h3 {
+            margin: 12px 0 9px;
+            font-size: 18px;
+        }
+
+        .process-card p {
+            color: #b9c9dc;
+            font-size: 13px;
+        }
+
+        /* =========================
+           WHY US
+        ========================== */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 28px 18px;
+            border: 1px solid #e6eaf0;
+            border-radius: 12px;
+        }
+
+        .why-card strong {
+            display: block;
+            font-size: 30px;
+            color: #0d6efd;
+            margin-bottom: 8px;
+        }
+
+        .why-card span {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            padding: 70px 0;
+            background: #eef6ff;
+        }
+
+        .cta-box {
+            background: linear-gradient(120deg, #0b3768, #0d6efd);
+            color: #ffffff;
+            border-radius: 18px;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .cta-box h2 {
+            font-size: 32px;
+            margin-bottom: 9px;
+        }
+
+        .cta-box p {
+            color: #dcecff;
+        }
+
+        .cta .btn-primary {
+            background: #ffffff;
+            color: #0d6efd;
+            white-space: nowrap;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #071321;
+            color: #ffffff;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 50px;
+            padding-bottom: 35px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer li,
+        footer a {
+            color: #aebdce;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,.1);
+            padding-top: 20px;
+            color: #8798aa;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                flex-direction: column;
+                padding: 18px 0;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+                display: none;
+                transform: none;
+                width: 300px;
+                min-width: 300px;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                transform: none;
+            }
+
+            .hero {
+                min-height: 520px;
+            }
+
+            .solution-grid,
+            .capabilities-grid,
+            .process-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 35px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark"><img src="VIT.png"></span>
+            <div style="font-size: 15px;">
+                VEGA IT NETWORKS INDIA<br> PRIVATE LIMITED
+            </div>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="index.html#about">About Us</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="index.html#solutions" class="active">Solutions ▾</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="Network Infrastructure.html">Network Infrastructure</a></li>
+                    <li><a href="Voice Video Communication.html">Voice and Video Communication</a></li>
+                    <li><a href="Surveillance System.html">Surveillance System</a></li>
+                    <li><a href="Access Control System.html">Access Control System</a></li>
+                    <li><a href="Fire Alarm System.html">Fire Alarm System</a></li>
+                    <li><a href="IT Hardware & Software Solutions.html">IT Hardware & Software Solutions</a></li>
+                    <li><a href="Cyber Security.html">Cyber Security</a></li>
+                    <li><a href="Cloud Solutions.html" class="active">Cloud Solutions</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html#partners">Partners</a>
+            </li>
+
+            <li>
+                <a href="index.html#clients">Clients</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact" class="quote-btn">Get a Quote</a>
+            </li>
+
+        </ul>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                &nbsp; / &nbsp;
+                Solutions
+                &nbsp; / &nbsp;
+                Cloud Solutions
+            </div>
+
+            <h1>
+                Cloud <span>Solutions</span>
+            </h1>
+
+            <p>
+                Modernize your IT environment with scalable cloud solutions that improve
+                flexibility, availability and operational efficiency — from cloud
+                infrastructure and migration to backup, security and ongoing
+                management.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="index.html#contact" class="btn-primary">Get a Quote</a>
+                <a href="#solutions" class="btn-outline">Explore Solutions</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section>
+    <div class="container">
+
+        <div class="overview-grid">
+
+            <div class="overview-text">
+
+                <div class="section-label">Cloud Solutions</div>
+
+                <h2>
+                    Scalable Cloud Infrastructure
+                    for a Modern Business
+                </h2>
+
+                <p>
+                    Modern businesses need flexible technology infrastructure that can scale with
+                    changing workloads, users and applications while improving availability,
+                    resilience and operational efficiency.
+                </p>
+
+                <p>
+                    VEGA IT NETWORKS designs and implements practical cloud environments using cloud
+                    infrastructure, migration services, virtualization, backup and recovery,
+                    secure connectivity and cloud management solutions tailored to business
+                    requirements.
+                </p>
+
+                <ul class="overview-list">
+                    <li><span class="check">✓</span> Cloud Infrastructure</li>
+                    <li><span class="check">✓</span> Cloud Migration & Modernization</li>
+                    <li><span class="check">✓</span> Cloud Backup & Disaster Recovery</li>
+                    <li><span class="check">✓</span> Cloud Security & Access Management</li>
+                    <li><span class="check">✓</span> Managed Cloud Services</li>
+                </ul>
+
+            </div>
+
+            <div class="access-box">
+                <div class="access-icon">☁</div>
+
+                <h3>Scale Faster. Operate Smarter.</h3>
+
+                <p>
+                    Establish controlled entry across your organization with
+                    secure authentication, configurable access permissions,
+                    event records and integrated management.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="solutions" id="solutions">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="section-label">Our Solutions</div>
+
+            <h2>Complete Cloud Solutions</h2>
+
+            <p>
+                From employee access and restricted rooms to multi-door
+                enterprise environments, we provide scalable access control
+                solutions designed around your security requirements.
+            </p>
+        </div>
+
+        <div class="solution-grid">
+
+            <div class="solution-card">
+                <div class="solution-number">01</div>
+                <h3>Cloud Infrastructure</h3>
+                <p>
+                    Fingerprint and facial authentication solutions for
+                    controlled and convenient identity verification.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <div class="solution-number">02</div>
+                <h3>Cloud Migration & Modernization</h3>
+                <p>
+                    Card and proximity-based access solutions for employees,
+                    contractors and authorized users.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <div class="solution-number">03</div>
+                <h3>Cloud Backup & Disaster Recovery</h3>
+                <p>
+                    Controllers, readers, electronic locks, exit devices and
+                    related hardware for secure entry points.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <div class="solution-number">04</div>
+                <h3>Cloud Networking</h3>
+                <p>
+                    Integrate access and attendance information to support
+                    workforce administration and operational reporting.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <div class="solution-number">05</div>
+                <h3>Cloud Security</h3>
+                <p>
+                    Controlled visitor registration and temporary access
+                    workflows for offices, facilities and campuses.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <div class="solution-number">06</div>
+                <h3>Managed Cloud Services</h3>
+                <p>
+                    Manage users, credentials, doors, schedules and access
+                    permissions from a centralized management environment.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section>
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="section-label">Cloud Technologies</div>
+
+            <h2>Build a Flexible Cloud Environment</h2>
+
+            <p>
+                We help organizations implement access control systems suited
+                to their facilities, user groups, security requirements and
+                operating environments.
+            </p>
+        </div>
+
+        <div class="capabilities-grid">
+
+            <div class="capability">
+                <div class="capability-icon">01</div>
+                <h3>Cloud Compute & Storage</h3>
+                <p>
+                    Fingerprint and facial authentication devices for
+                    identity-based access to controlled areas.
+                </p>
+            </div>
+
+            <div class="capability">
+                <div class="capability-icon">02</div>
+                <h3>Virtualization & Cloud Platforms</h3>
+                <p>
+                    Contactless credential readers for employee and
+                    authorized-user access.
+                </p>
+            </div>
+
+            <div class="capability">
+                <div class="capability-icon">03</div>
+                <h3>Cloud Connectivity</h3>
+                <p>
+                    Networked controllers that apply access permissions,
+                    schedules and door rules.
+                </p>
+            </div>
+
+            <div class="capability">
+                <div class="capability-icon">04</div>
+                <h3>Cloud Security & Identity</h3>
+                <p>
+                    Compatible electronic locking hardware for offices,
+                    restricted rooms and controlled entrances.
+                </p>
+            </div>
+
+            <div class="capability">
+                <div class="capability-icon">05</div>
+                <h3>Backup & Disaster Recovery</h3>
+                <p>
+                    Centralized administration of users, credentials,
+                    permissions, schedules and access events.
+                </p>
+            </div>
+
+            <div class="capability">
+                <div class="capability-icon">06</div>
+                <h3>Cloud Management & Monitoring</h3>
+                <p>
+                    Integrate access events with compatible surveillance and
+                    security systems for improved operational visibility.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="section-label">Our Approach</div>
+
+            <h2>From Assessment to Cloud Deployment</h2>
+
+            <p>
+                We follow a structured approach to design an access control
+                environment that is secure, scalable and manageable.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <span>01</span>
+                <h3>Assess</h3>
+                <p>
+                    Understand doors, entry points, user groups, restricted
+                    areas and security objectives.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>02</span>
+                <h3>Design</h3>
+                <p>
+                    Plan readers, credentials, controllers, locks, cabling,
+                    permissions and system architecture.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>03</span>
+                <h3>Deploy</h3>
+                <p>
+                    Install, configure and integrate access control hardware
+                    and management systems.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>04</span>
+                <h3>Manage</h3>
+                <p>
+                    Provide support, user administration, system maintenance
+                    and operational assistance.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>05</span>
+                <h3>Optimize</h3>
+                <p>
+                    Review access policies and system performance as your
+                    organization and security requirements evolve.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section>
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="section-label">Why VEGA IT NETWORKS</div>
+
+            <h2>A Trusted Technology Partner for Cloud Solutions</h2>
+
+            <p>
+                We deliver integrated access control infrastructure designed
+                around the operational and security needs of modern businesses.
+            </p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <strong>15+</strong>
+                <span>Years Experience</span>
+            </div>
+
+            <div class="why-card">
+                <strong>500+</strong>
+                <span>Projects Delivered</span>
+            </div>
+
+            <div class="why-card">
+                <strong>100+</strong>
+                <span>Business Clients</span>
+            </div>
+
+            <div class="why-card">
+                <strong>24×7</strong>
+                <span>Technical Support</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+                <h2>Transform Your IT with Cloud</h2>
+
+                <p>
+                    Talk to VEGA IT NETWORKS about your access control system
+                    requirements.
+                </p>
+            </div>
+
+            <a href="index.html#contact" class="btn-primary">Get a Quote</a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <div class="logo">
+                    <span class="logo-mark">VI</span>
+                    <span style="color:#fff;">VEGA IT NETWORKS</span>
+                </div>
+
+                <p style="margin-top:18px;">
+                    Professional IT infrastructure, networking and technology
+                    solutions for modern businesses.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#clients">Clients</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <ul>
+                    <li>+91 95506 59565</li>
+                    <li>sales@vegaitnetworks.com</li>
+                    <li>Hyderabad, Telangana, India</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 VEGA IT NETWORKS. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
